@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee                       http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+  
+ <servlet>
+    	<servlet-name>home</servlet-name>
+    	<servlet-class>com.manager.ShowscheduleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>home</servlet-name>
+    	<url-pattern>/view</url-pattern>
+    </servlet-mapping>   
+  
+  
+  
+  
+        
+ <servlet>
+    	<servlet-name>AddScheduleServlet</servlet-name>
+    	<servlet-class>com.manager.AddScheduleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>AddScheduleServlet</servlet-name>
+    	<url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+ 
+ <servlet>
+    	<servlet-name>UpdateScheduleServlet</servlet-name>
+    	<servlet-class>com.manager.UpdateScheduleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>UpdateScheduleServlet</servlet-name>
+    	<url-pattern>/update</url-pattern>
+    </servlet-mapping>
+ 
+ 
+ <servlet>
+    	<servlet-name>DeleteScheduleServlet</servlet-name>
+    	<servlet-class>com.manager.DeleteScheduleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>DeleteScheduleServlet</servlet-name>
+    	<url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+ 
+ <servlet>
+     <servlet-name>MyResServlet</servlet-name>
+     <servlet-class>com.manager.MyResServlet</servlet-class>  
+   </servlet> 
+   <servlet-mapping>
+     <servlet-name>MyResServlet</servlet-name>
+     <url-pattern>/nice</url-pattern>
+   </servlet-mapping> 
+   
+   <servlet>
+   <servlet-name>ReservationInsert</servlet-name>
+   <servlet-class>com.manager.ReservationInsert</servlet-class>
+   </servlet> 
+    <servlet-mapping>
+    <servlet-name>ReservationInsert</servlet-name>
+    <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+       <servlet-name>UpdateReservationServlet</servlet-name> 
+       <servlet-class>com.manager.UpdateReservationServlet</servlet-class>
+    </servlet>  
+    <servlet-mapping>
+          <servlet-name>UpdateReservationServlet</servlet-name>
+          <url-pattern>/modify</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+       <servlet-name>DeleteReservationServlet</servlet-name> 
+       <servlet-class>com.manager.DeleteReservationServlet</servlet-class>
+    </servlet>  
+    <servlet-mapping>
+          <servlet-name>DeleteReservationServlet</servlet-name>
+          <url-pattern>/remove</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+       <servlet-name>ResCancellationServlet</servlet-name> 
+       <servlet-class>com.manager.ResCancellationServlet</servlet-class>
+    </servlet>  
+    <servlet-mapping>
+          <servlet-name>ResCancellationServlet</servlet-name>
+          <url-pattern>/avoid</url-pattern>
+    </servlet-mapping>
+ 
+    <servlet>
+<servlet-name>userLoginServlet</servlet-name>
+<servlet-class>com.manager.userLoginServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>userLoginServlet</servlet-name>
+<url-pattern>/enter</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>insertUserServlet</servlet-name>
+<servlet-class>com.manager.insertUserServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>insertUserServlet</servlet-name>
+<url-pattern>/in</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>updateUserServlet</servlet-name>
+<servlet-class>com.manager.updateUserServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>updateUserServlet</servlet-name>
+<url-pattern>/recover</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>deleteUserServlet</servlet-name>
+<servlet-class>com.manager.deleteUserServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>deleteUserServlet</servlet-name>
+<url-pattern>/bin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>addUsersServlet</servlet-name>
+<servlet-class>com.manager.addUsersServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>addUsersServlet</servlet-name>
+<url-pattern>/fast</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>viewupdateServlet</servlet-name>
+<servlet-class>com.manager.viewupdateServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>viewupdateServlet</servlet-name>
+<url-pattern>/parent</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>viewDeleteServlet</servlet-name>
+<servlet-class>com.manager.viewDeleteServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>viewDeleteServlet</servlet-name>
+<url-pattern>/child</url-pattern>
+</servlet-mapping>
+         
+         
+   <servlet>
+     <servlet-name>BusInsertServlet</servlet-name>
+        <servlet-class>com.manager.BusInsertServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+ <servlet-name>BusInsertServlet</servlet-name>
+ <url-pattern>/idiot</url-pattern>
+</servlet-mapping>
+<servlet>
+     <servlet-name>UpdatebusdetailsServlet</servlet-name>
+        <servlet-class>com.manager.UpdatebusdetailsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+ <servlet-name>UpdatebusdetailsServlet</servlet-name>
+ <url-pattern>/go</url-pattern>
+</servlet-mapping>
+
+<servlet>
+     <servlet-name>DeleteBusAccountServlet</servlet-name>
+        <servlet-class>com.manager.DeleteBusAccountServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+ <servlet-name>DeleteBusAccountServlet</servlet-name>
+ <url-pattern>/come</url-pattern>
+ </servlet-mapping>      
+         
+         
+</web-app>  
+ 

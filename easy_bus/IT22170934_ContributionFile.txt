@@ -1,0 +1,13 @@
+
+ 
+Student Name- W.A.O.H. WANASEKARA
+
+
+CRUD Operation - Manage Bus Details
+
+        
+Model- Busdetails.java, AddingBusdetailsDBUtil.java
+
+View- Busaccount.jsp, BusdetailsInsert.jsp, Updatebusdetails.jsp, Deletebusdetails.jsp 
+
+Controller- BusInsertServlet.java, UpdatebusdetailsServlet.java, DeleteBusAccountServlet.java
